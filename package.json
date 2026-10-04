@@ -1,0 +1,22 @@
+{
+    "name": "yieldfutex",
+    "version": "1.0.0",
+    "description": "",
+    "license": "ISC",
+    "author": "",
+    "type": "module",
+    "main": "main.js",
+    "exports": {
+        ".": "./main.js",
+        "./refcell": "./refcell.js",
+        "./futex": "./futex.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint:pkg": "publint",
+        "prepublishOnly": "npm run lint:pkg"
+    },
+    "devDependencies": {
+        "publint": "^0.3.25"
+    }
+}
